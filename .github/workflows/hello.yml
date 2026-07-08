@@ -19,7 +19,10 @@ jobs:
     steps:
       - name: say hello to everyone
         run: echo "Hello dosto"
-
+      - name: Display Current Date & Time
+        run: echo "Current Date and Time : $(date '+%Y-%M-%D') "
+      - name: Disply Date
+        run: date
 # Steps
 # Should be inside the Job
 
