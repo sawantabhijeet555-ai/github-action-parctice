@@ -1,5 +1,5 @@
 name: CI Build Update
-  on
+  on:
     push:
       branches: ["main"]
 
