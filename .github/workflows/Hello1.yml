@@ -1,18 +1,18 @@
 name: CI Build Update
-  on:
-    push:
-      branches: ["main"]
+on:
+  push:
+    branches: ["main"]
 
-  jobs:
-    Demo_Hello:
+jobs:
+  Demo_Hello:
       runs-on: ubuntu-latest
 
-    steps:
-      - name: code checkout
-        uses: Actions/checkout@v4
+  steps:
+    - name: code checkout
+      uses: Actions/checkout@v4
 
-      - name:  Print Hello from GitHub Actions!
-        run: echo "Hello from GitHub Actions!"
+    - name:  Print Hello from GitHub Actions!
+      run: echo "Hello from GitHub Actions!"
 
     
 
