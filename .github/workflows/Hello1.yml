@@ -14,5 +14,16 @@ jobs:
         - name:  Print Hello from GitHub Actions!
           run: echo "Hello from GitHub Actions!"
 
-    
+        - name: Print the current date and time
+          run: echo "Current Date & Time is : $(date '+%Y-%m-%d %H:%M:%S')"
+
+        - name: Print Triggering Branch Name
+          run: echo "The branch that triggered this run is ${{ github.ref_name }}"
+        
+
+        - name: List files in the repo
+          run: ls -la
+
+        - name: Print the runner's operating system
+          run: echo "The operating system is ${{ runner.os }}"
 
