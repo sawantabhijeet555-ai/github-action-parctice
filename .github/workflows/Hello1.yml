@@ -9,7 +9,7 @@ jobs:
 
   steps:
     - name: code checkout
-      uses: Actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name:  Print Hello from GitHub Actions!
       run: echo "Hello from GitHub Actions!"
