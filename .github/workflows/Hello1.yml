@@ -7,12 +7,12 @@ jobs:
   Demo_Hello:
       runs-on: ubuntu-latest
 
-  steps:
-    - name: code checkout
-      uses: actions/checkout@v4
+      steps:
+        - name: code checkout
+          uses: actions/checkout@v4
 
-    - name:  Print Hello from GitHub Actions!
-      run: echo "Hello from GitHub Actions!"
+        - name:  Print Hello from GitHub Actions!
+          run: echo "Hello from GitHub Actions!"
 
     
 
