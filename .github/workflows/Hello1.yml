@@ -27,6 +27,5 @@ jobs:
 
         - name: Print the runner's operating system
           run: echo "The operating system is ${{ runner.os }}"
-          
-        - name: Intentionally Failing Step
-          run: fakecommand
+
+       
