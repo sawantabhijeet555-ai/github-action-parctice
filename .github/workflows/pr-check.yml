@@ -1,0 +1,17 @@
+name: Pr-Check
+on:
+    pull_request:
+        types: [opened, synchronize]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout code
+              uses: action/checkout@v4
+
+            - name: PR check running for branch
+              run: "PR check running for branch ${{ github.head_ref }}"
+
+            - name: check file system
+              run: ls -a 
