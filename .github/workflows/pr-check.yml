@@ -1,12 +1,7 @@
 name: PR Check
 
 on:
-  pull_request:
-    branches:
-      - feature/pr-check-test 
-    types:
-      - opened
-      - synchronize
+  workflow_dispatch:
 
 jobs:
     test:
